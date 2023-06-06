@@ -1,0 +1,35 @@
+﻿<Window x:Class="wpfsakk.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:wpfsakk"
+        mc:Ignorable="d"
+        Title="Window1" WindowState="Maximized" AllowsTransparency="True" WindowStyle="None"
+        >
+    <Window.Background>
+        <SolidColorBrush Opacity="0.5" Color="White"></SolidColorBrush>
+    </Window.Background>
+    <Grid Height="150" Width="120">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="55px"></ColumnDefinition>
+            <ColumnDefinition Width="55px"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <Button x:Name="wrook" Grid.Column="0" Grid.Row="0" Width="50" Height="50">
+            <Image Source="/bin/debug/assets/rook_white.png"></Image></Button>
+        <Button x:Name="wqueen" Grid.Column="1" Grid.Row="0" Width="50" Height="50">
+            <Image Source="/bin/debug/assets/queen_white.png"></Image>
+        </Button>
+        <Button x:Name="wknight" Grid.Column="0" Grid.Row="1" Width="50" Height="50">
+            <Image Source="/bin/debug/assets/knight_white.png"></Image>
+        </Button>
+        <Button x:Name="wbishop" Grid.Column="1" Grid.Row="1" Width="50" Height="50">
+            <Image Source="/bin/debug/assets/bishop_white.png"></Image>
+        </Button>
+    </Grid>
+</Window>
